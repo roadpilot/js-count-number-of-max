@@ -31,7 +31,18 @@ function readLine() {
 
 function birthdayCakeCandles(candles) {
     // Write your code here
-
+    // const dict = {}
+    // for (let i=0; i<candles.length; i++){
+    //     if (dict[candles[i]]){
+    //         dict[candles[i]]++
+    //     } else {
+    //         dict[candles[i]]=1
+    //     }
+    // }
+    // // console.log(Object.keys(dict).length)
+    // return (Object.values(dict).sort()[Object.keys(dict).length-1])
+    const maxHeight = Math.max(...candles)
+    return (candles.filter(el => el == maxHeight).length)
 }
 
 function main() {
